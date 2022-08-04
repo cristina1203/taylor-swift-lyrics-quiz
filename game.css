@@ -1,0 +1,102 @@
+body {
+    color: #F5F5F5;
+}
+
+/* Header with Progress and Score */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progress-bar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid #412234;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progress-bar-full {
+    height: 100%;
+    background: #412234;
+    width: 0%;
+}
+
+#score {
+    color: #412234;
+}
+
+/* Lyrics */
+
+.question-container {
+    padding: 2rem;
+    max-height: 30vh;
+}
+
+@media screen and (max-width: 768px) {
+    .question-container {
+        max-height: 40vh;
+    }
+}
+
+#question {
+    text-align: center;
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #question {
+        font-size: 2.75rem;
+    }
+}
+
+/* Answer Choices */
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: #B49FCC;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #DFD7EA;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #556B2F;
+}
+
+.incorrect {
+    background-color: #DC143C;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 35rem;
+    }
+}
